@@ -1,0 +1,18 @@
+
+<section>
+    <div class="analisis-container">
+        <h1>Análisis de sentimiento de comentarios</h1>
+        <div class="input-group mb-3 url-video disable">
+            <span class="input-group-text" id="basic-addon3">Link del vídeo</span>
+            <input type="text" class="form-control" id="url-video" placeholder="https://www.youtube.com/..." aria-describedby="basic-addon3">
+        </div>
+
+        <button (click)="sendDataToFlask()" class="btn-analizar">Analizar Sentimiento</button>
+
+        <div class="txt-analysis">
+            <p class="txt-clasf">Los comentarios son.. <span id="txt-clasificado">{{ analisis_sentimiento }}</span></p>
+            <p>Los comentarios del vídeo pueden ser dependiendo de su contenido: <span class="txt-resalto">Positivos</span>, <span class="txt-resalto">Negativos</span> o <span class="txt-resalto">Nueutros</span></p>
+        </div>
+
+    </div>
+</section>

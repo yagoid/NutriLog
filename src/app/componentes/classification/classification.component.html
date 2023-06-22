@@ -1,0 +1,54 @@
+
+<section>
+    <div class="formularios">
+        <h1>Clasificar vídeo</h1>
+        <div class="input-group mb-3 url-receta disable">
+            <span class="input-group-text" id="basic-addon3">Recipe link</span>
+            <input type="text" class="form-control" id="url-video" placeholder="https://www.youtube.com/..." aria-describedby="basic-addon3">
+        </div>
+
+        <button (click)="sendDataToFlask()" class="btn-clasificar">Clasificar</button>
+
+        <div class="txt-clasificacion">
+            <p class="txt-clasf">La receta es.. <span id="txt-clasificado">{{ clasificacion }}</span></p>
+            <p>La receta puede ser dependiendo de sus ingredientes: <span class="txt-resalto">Sana</span>, <span class="txt-resalto">Insana</span> o <span class="txt-resalto">Relativamente Sana</span></p>
+        </div>
+    </div>
+
+    <div class="datos-recetas">
+        <h2>Algunas recetas clasificadas</h2>
+
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Link Video</th>
+                <th scope="col">Classification</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>{{ link_video1 }}</td>
+                <td>Sana</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>{{ link_video2 }}</td>
+                <td>Insana</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>{{ link_video3 }}</td>
+                <td>Insana</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>{{ link_video4 }}</td>
+                <td>Relativamente Sana</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+</section>

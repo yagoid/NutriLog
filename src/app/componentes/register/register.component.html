@@ -1,0 +1,29 @@
+<section>
+    <div class="form-box">
+        <div class="form-value">
+            <form [formGroup]="form" (submit)="submit()">
+                <h2>Register</h2>
+                <div class="inputbox">
+                    <ion-icon name="accessibility-outline"></ion-icon>
+                    <input type="text" formControlName="name" required>
+                    <label for="">Name</label>
+                </div>
+                <div class="inputbox">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input type="email" formControlName="email" required>
+                    <label for="">Email</label>
+                </div>
+                <div class="inputbox">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="password" formControlName="password" required>
+                    <label for="">Password</label>
+                </div>
+                <button [disabled]="!form.valid">Register</button>
+                <div class="login">
+                    <p>You have an account <a href="path_login">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+

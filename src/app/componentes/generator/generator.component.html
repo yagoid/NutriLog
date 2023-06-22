@@ -1,0 +1,18 @@
+
+<section>
+    <div class="analisis-container">
+        <h1>GeneradorGPT</h1>
+        <p class="txt-introducion">Introduce tus ingredientes para que la inteligencia artificial ChatGPT haga una receta con los ellos.</p>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Ingredientes</span>
+            <input (keyup.enter)="consultar(prompt.value)" type="text" placeholder="Patatas, zanahoria, calabazin..." class="form-control" id="ingredients" #prompt>
+        </div>
+
+        <button type="submit" (click)="consultar(prompt.value)" class="btn-generar">Generar receta</button>
+
+        <div class="txt-generador">
+            <p class="txt-receta"> <span class="txt-resalto">Receta: </span> <br> {{resGPT}}</p>
+        </div>
+
+    </div>
+</section>

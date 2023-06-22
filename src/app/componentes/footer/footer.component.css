@@ -1,0 +1,18 @@
+footer {
+    /* background: transparent 0.6; */
+    background: linear-gradient(transparent, #100020);
+}
+.text-white {
+    color: rgb(215, 215, 215) !important;
+    font-size: 15px;
+}
+
+/* footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: red url(../../../assets/img/wave.png);
+    background-size: 1000px 100px;
+} */

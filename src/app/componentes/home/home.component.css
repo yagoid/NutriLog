@@ -1,0 +1,63 @@
+
+.home {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    /* background: #212529 url(../../../assets/img/circle-scatter-haikei.svg) repeat-x; */
+    /* background: linear-gradient(#271938, #000016); */
+}
+
+.presentacion {
+    display: flex;
+    flex-direction: column;
+}
+
+.saludo {
+    margin-bottom: 20px;
+    color: rgba(50, 202, 174, 1);
+}
+
+.titulo {
+    color: rgba(50, 202, 174, 1);
+    /* color: rgba(209, 178, 4, .7); */
+    font-size: 50px;
+    font-weight: bold;
+}
+.titulo span {
+    color: #c7c8c9;
+    font-weight: normal;
+}
+
+.descripcion {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #c7c8c9;
+}
+
+.iniciar-sesion {
+    margin-top: 30px;
+    padding: 12px 20px;
+    width: 200px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(50, 202, 174, 1);
+    /* background-color: rgba(209, 178, 4, .7); */
+    border-radius: 5px;
+    color: #271938;
+    transition: bottom 0.3s ease 0s;
+    bottom: 0;
+}
+.iniciar-sesion:hover {
+    position: relative;
+    bottom: 2px;
+}
+
+.generator {
+    width: 200px;
+}
+
+.arrow {
+    margin-left: 20px;
+    margin-top: 40px !important;
+}

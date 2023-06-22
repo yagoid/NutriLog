@@ -1,0 +1,22 @@
+<div class="home">
+
+    <div class="container">
+
+        <div class="presentacion">
+            <h3 class="saludo" *ngIf="loggedIn">Hello, {{ nombre }}</h3>
+
+            <h1 class="titulo"><span>INTELLIGENCE</span><br>THAT CHANGES EVERYTHING</h1>
+            <p class="descripcion">
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+                <span class="arrow">Real-time recipe categorizer.</span><br>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+                <span class="arrow">Sentiment tracking in videos.</span><br>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+                <span class="arrow">Recipe generator powered by AI.</span>
+            </p>
+            <button onclick="location.href='path_login'" type="button" class="iniciar-sesion" *ngIf="!loggedIn">Login</button>
+            <button onclick="location.href='path_generator'" type="button" class="iniciar-sesion generator" *ngIf="loggedIn">Recipe Generator</button>
+        </div>
+    
+    </div>
+</div>
